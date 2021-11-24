@@ -23,13 +23,15 @@
     - main.css                  {linker til indholdet på index.html}
     - åretsshow.css             {linker til indholdet på åretsshow.html OG ALLE tidligere(2013-20).html}
     - tidligere.css             {linker til indholdet på tidligere.html}
-    - tidligere-temp.css        {linker til indholdet på ...}
+    - tidligere-temp.css        {linker til indholdet på tidligere(2013-20).html}
 - js
     - script.js                 {omdirrigerer som regel til ny side gennem function() {}}
     - årstal.js                 {indtil videre ubrugt}
 - img
     - sag.png                   {logo i fanebladet}
-    - 2013.png -> 2020.png      {baggrunde}
-    - + diverse
-
-*senest opdateret* 24-11-2021
+    - 2013.png                  {baggrunde}
+    |
+    |
+    V
+    - 2020.png
+    + diverse
