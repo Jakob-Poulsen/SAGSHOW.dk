@@ -29,9 +29,5 @@
     - årstal.js                 {indtil videre ubrugt}
 - img
     - sag.png                   {logo i fanebladet}
-    - 2013.png                  {baggrunde}
-    |
-    |
-    V
-    - 2020.png
-    + diverse
+    - 2013.png -> 2020.png      {baggrunde}
+    - + diverse
