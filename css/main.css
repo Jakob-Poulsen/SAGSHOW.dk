@@ -9,58 +9,29 @@ img {
 }
 
 .inner-content {
-    width: 90vw;
+    width: 100vw;
     min-height: 100vh;
     padding: 0 50px;
-}
-
-.plakat-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.årets-plakat {
-    width: 100vw;
-    height: calc(100vh - 100px);
-    display: flex;
-    /* overflow: hidden; */
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    /* position: relative; */
-    border-bottom: 1.5px solid black;
-}
-
-.plakat-container img{
-    height: auto;
-    width: 90%;
-    border: none;
-}
-
-.background-image {
-    transform: scale(105%);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
-    background: url(../img/2020.png);
-    background-position: center;
-    filter: blur(8px);
 }
 
 .plakat-container {
     display: flex;
     z-index: 10;
-    width: clamp(250px,35vw,500px);
-    height: 72vh;
+    height: auto;
+    width:auto;
     background: gray;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px 10px;
     border: 1px solid black;
+    box-shadow: 2px 2px 5px black, inset 1px 1px 5px #00000050;
+}
+
+.plakat-container img{
+    height: auto;
+    width: clamp(200px, 20vw, 500px); /**/
+    border: none;
 }
 
 .button-container {
@@ -76,15 +47,60 @@ img {
     color: white;
     text-shadow: 0px 2px 1px black;
     cursor: pointer;
-    width: fit-content;
+    width: 90%;
     padding: 2px 20px;
     border-radius: 5px;
     height: 40px;
     border: 1.2px solid black;
     box-shadow: 0px 4px rgba(89, 216, 67, 0.712);
-    font-size: 1.5rem;
+    font-size: clamp(15px, 2vw, 25px);
     transition: 0.3s;
 }
+.button-container button:hover { 
+    box-shadow: 0px 3px rgba(89, 216, 67, 0.5);
+    background:rgb(79, 190, 59) ;
+    border:1.8px solid black;
+    color: hsl(0, 0%, 90%);
+    text-shadow: 0px 1px 1px black;
+    transition: 0.25 ease;
+}
+
+.button-container button:active {
+    transform: scale(95%);
+    transition: 0.3s ease-in-out;
+}
+
+.årets-plakat {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1.5px solid black;
+}
+
+.plakat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.background-image {
+    transform: scale(105%);
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    z-index: 0;
+    background: url(../img/2020.png);
+    background-position: center;
+    filter: blur(8px);
+}
+
+
 
 .plakat-img {
     transition: 0.2s ease;
@@ -95,17 +111,6 @@ img {
     transition: 0.1s;
 }
 
-.button-container button:hover { 
-    box-shadow: 0px 3px rgba(89, 216, 67, 0.5);
-    background:rgba(89, 216, 67, 0.8) ;
-    text-shadow: 0px 1px 1px black;
-    transition: 0.2s;
-}
-
-.button-container button:active {
-    transform: scale(95%);
-    transition: 0.3s;
-}
 
 
 .tidligere-plakat {

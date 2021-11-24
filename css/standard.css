@@ -18,7 +18,11 @@
     font-family: 'Fjalla One', sans-serif;
 }
 
-body {
+p, li {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,body {
     overflow-x: hidden;
 }
 
@@ -54,7 +58,7 @@ header a {
 header a:hover{
     background: var(--hover);
     box-shadow: 0px 1px 2px black;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 aside {
@@ -63,11 +67,12 @@ aside {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 80px;
     min-height: 100vh;
 }
 
 footer {
+    position: relative;
     width: 100vw;
     height: 70px;
     background: gray;
@@ -122,16 +127,26 @@ footer {
 }
 
 .special-button {
-    /* background:var(--big-button); */
     text-transform: uppercase;
     width: 165px;
     height: 50%;
     font-weight: 700;
-    border-radius: 3px;
+    border-radius: 4px;
+    /* background: linear-gradient(0deg, rgba(247, 187, 5, 1), rgba(255, 221, 140, 1)); */
+    background: linear-gradient(180deg, rgba(247, 187, 5, 1), rgba(255, 221, 140, 1));
+    box-shadow: inset 0.5px 0.5px 3px #00000069, 0px 3px 2px black;
+    transition: 0.2s;
+}
+
+.special-button:hover {
+    background: linear-gradient( rgba(247, 187, 5, 0.637), rgba(255, 220, 140, 0.671));
+    box-shadow: inset 0.5px 0.5px 3px #00000069, 0px 1px 2px black;
+    transition: 0.2s;
 }
 
 .aktuel-link {
     background: var(--visited);
+    box-shadow: 0px 3px 1px black;
 }
 
 footer p {
@@ -141,6 +156,29 @@ footer p {
     word-spacing: 0px;
     column-count: 1;
     font-size: 1em;
+}
+
+.top-btn {
+    position: absolute;
+    right: 2vw;
+    bottom: 2vh;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-btn:hover {
+    background-color: var(--visited);
+    transition: 0.3s;
+}
+
+.afsnit-titel, .main-title {
+    text-shadow: 0.4px 0.4px 2px black;
+    font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -175,7 +213,7 @@ footer p {
         border: none;
         padding: 10px;
         transition: 0.3s ease;
-        cursor: pointer;
+        cursor: pointer;        
     }
 
     button img {

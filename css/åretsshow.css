@@ -32,13 +32,9 @@ iframe {
 }
 
 .inner-content {
-    min-height: 200vh;
+    /* min-height: 200vh; */
     margin: 30vh 0vw 0 0 ;
     position: relative;
-}
-
-.main-title, .afsnit-titel {
-    font-size: 2.5rem;
 }
 
 
@@ -76,13 +72,14 @@ iframe {
 }
 
 p {
+
+    font-family: 'Times New Roman', Times, serif;
     text-shadow: none;
     font-size: 1.4rem;
     font-weight: 100;
     line-height: 35px;
     column-count: 2;
-    column-gap: 5vw;
-    letter-spacing: 0.1vw;
+    column-gap: 4vw;
 }
 
 .content-container img {
@@ -135,10 +132,14 @@ p {
     width: fit-content;
 }
 @media only screen and (max-width: 1060px) {
-    
+    html {
+        overflow-x: hidden;
+    }
     p {
         line-height: 35px;
         column-count: 1;
+        font-size: 1rem;
+        text-align:justify;
     }
     .info-cont {
         margin: none;
