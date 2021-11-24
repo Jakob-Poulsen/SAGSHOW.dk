@@ -1,0 +1,1 @@
+var SAG_SHOW_ÅRSTAL = 2022;
