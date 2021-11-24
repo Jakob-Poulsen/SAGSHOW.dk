@@ -1,0 +1,192 @@
+img {
+    height: inherit;
+}
+
+.outer-content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inner-content {
+    width: 90vw;
+    min-height: 100vh;
+    padding: 0 50px;
+}
+
+.plakat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.årets-plakat {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* position: relative; */
+    border-bottom: 1.5px solid black;
+}
+
+.plakat-container img{
+    height: auto;
+    width: 90%;
+    border: none;
+}
+
+.background-image {
+    transform: scale(105%);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background: url(../img/2020.png);
+    background-position: center;
+    filter: blur(8px);
+}
+
+.plakat-container {
+    display: flex;
+    z-index: 10;
+    width: clamp(250px,35vw,500px);
+    height: 72vh;
+    background: gray;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    border: 1px solid black;
+}
+
+.button-container {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    background: rgb(90, 216, 67);
+    color: white;
+    text-shadow: 0px 2px 1px black;
+    cursor: pointer;
+    width: fit-content;
+    padding: 2px 20px;
+    border-radius: 5px;
+    height: 40px;
+    border: 1.2px solid black;
+    box-shadow: 0px 4px rgba(89, 216, 67, 0.712);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.plakat-img {
+    transition: 0.2s ease;
+}
+
+.plakat-img:active  {
+    transform: scale(98%);
+    transition: 0.1s;
+}
+
+.button-container button:hover { 
+    box-shadow: 0px 3px rgba(89, 216, 67, 0.5);
+    background:rgba(89, 216, 67, 0.8) ;
+    text-shadow: 0px 1px 1px black;
+    transition: 0.2s;
+}
+
+.button-container button:active {
+    transform: scale(95%);
+    transition: 0.3s;
+}
+
+
+.tidligere-plakat {
+    margin-top: 50px;
+    min-height: 70vh;
+    width: 100vw;
+    padding: 0 10vw;
+    position: relative;
+}
+
+.tidligere-background-image {
+    transform: scale(105%);
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    background-image: url(../img/mainbackdrop.jpg);
+    filter: blur(2px);
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.bottom-plakat, .upper-plakat {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px;  
+}
+
+.bottom-plakat img, .upper-plakat img {
+    width: inherit;
+    /* box-shadow: 1px 1px 3px white; */
+}
+
+.upper-plakat {
+    margin-top: 60px;
+}
+
+.plakat-img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+.plakat-img img {
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid black;
+}
+
+.plakat-img img:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 990px) {
+    .bottom-plakat, .upper-plakat {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 45%;
+    }
+
+    
+    .upper-plakat {
+        margin-top: 0;
+    }
+    .tidligere-plakat {
+        display: flex;
+        justify-content: center;
+    }
+
+    .plakat-img {
+        justify-content: center;
+        margin: 10px 0;
+        height: 40vw;
+        width: 100%;
+    }
+}

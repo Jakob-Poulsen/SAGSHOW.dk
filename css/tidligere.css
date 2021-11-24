@@ -1,0 +1,143 @@
+:root {
+    --back:rgba(255, 255, 255, 0.9);
+}
+
+body {
+    /* background:url(../img/2020.png); */
+    background:black;
+}
+
+iframe {
+    border: 2px solid black;
+    width: 45vw;
+}
+
+.outer-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.background {
+    background: url(../img/backdrop-three.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    position: absolute;
+    transform: scale(101%);
+    background-position-y: -35vh;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+
+    filter: blur(2px);
+}
+
+.inner-content {
+    min-height: fit-content;
+    margin: 40vh 0vw 0 0 ;
+    padding: 20vh 20vw;
+    position: relative;
+}
+
+.main-title, .afsnit-titel {
+    font-size: 2.5rem;
+}
+
+.container {
+    background: var(--back);
+    text-align: justify;
+    padding: 0;
+    height: fit-content;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.info {
+    padding: 100px 30px;
+
+}
+
+.container-titel {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.margin {
+    margin-top: 10vh;
+}
+
+.large-title-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.titel-container {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    background:none;
+    position: relative;
+    width: 100vw;
+    padding:  5vh 0 0 0 ;
+}
+
+.titel-container div {
+    font-size: clamp(1rem, 5vw, 2.4rem);
+    letter-spacing: 0.2vw;
+    text-align: center;
+}
+
+.curve{
+    transform: translateY(4px);
+    fill:var(--back);
+
+}
+
+.media {
+    margin: 15vh 5vw 5vh 0;
+}
+
+.image {
+    height: 315px;
+    margin: 0vh 0vw 0vh 5vw;
+    /* width: 560px; */
+}
+
+
+p {
+    text-shadow: none;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 35px;
+    letter-spacing: 0.05vw;
+    word-spacing: 10px;
+}
+
+@media only screen and (max-width: 1060px) {
+    
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .media {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    }
+    .info {
+        padding: 20px 70px;
+    }
+    
+    .container:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    iframe, .info {
+        width: 90vw;
+    }
+
+}
