@@ -31,3 +31,5 @@
     - sag.png                   {logo i fanebladet}
     - 2013.png -> 2020.png      {baggrunde}
     - + diverse
+
+*senest opdateret* 24-11-2021
