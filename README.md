@@ -8,8 +8,9 @@
     - tidligere.html            {forside der linker til tidligere(2013-20).html og en liste over tidligere}
     - åretsshow.html            {side med info om årets show}
     - tidligere-template.html   {dette er et template som ikke er linket til ../index.html}
+    - kontakt.html              {her står noget info om sagshows koordinatorer}
 
-    - shows -->                 {links til alle tidligere år}
+    - **shows** -->             {links til alle tidligere år}
         - tidligere2013.html
         - tidligere2014.html
         - tidligere2015.html
@@ -24,6 +25,7 @@
     - åretsshow.css             {linker til indholdet på åretsshow.html OG ALLE tidligere(2013-20).html}
     - tidligere.css             {linker til indholdet på tidligere.html}
     - tidligere-temp.css        {linker til indholdet på tidligere(2013-20).html}
+    - kontakt                   {linker til indholdet på kontakt.html}
 - js
     - script.js                 {omdirrigerer som regel til ny side gennem function() {}}
     - årstal.js                 {indtil videre ubrugt}
