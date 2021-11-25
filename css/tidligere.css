@@ -18,7 +18,7 @@ body {
     background-repeat: repeat;
     position: absolute;
     transform: scale(101%);
-    background-position-y: -35vh;
+    background-position-y: -20vh;
     height: 100%;
     width: 100vw;
     z-index: -1;
@@ -46,7 +46,7 @@ body {
 .gamle-plakater {
     width: 90vw;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
     overflow-x: scroll;
     background: rgb(170, 170, 170);
     border: 2px solid black;

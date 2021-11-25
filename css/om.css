@@ -34,8 +34,9 @@ iframe {
 
 .inner-content {
     min-height: fit-content;
-    margin: 60vh 0vw 0 0 ;
+    margin: 50vh 0vw 0 0 ;
     position: relative;
+    padding: 0 10vw;
 }
 
 .main-title, .afsnit-titel {
