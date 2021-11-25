@@ -1,5 +1,4 @@
-**INDEX** 
-*sidst ændret* **25-11-2021**
+**INDEX**
 
 - index.html                    {Forside, Dette er hoveddokumentet som forbinder alle .html dokumenter}
 - list_black_24dp.svg           {.svg er billedet tilhørende index-knappen}
