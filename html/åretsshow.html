@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="title" onclick="home()">SAG-SHOW</div>
+            <div class="title" id="header_title" onclick="home()">SAG-SHOW</div>
             <div class="links">
                 <a href="../index.html">Forside</a>
                 <a class="aktuel-link" href="./åretsshow.html">Årets show</a>
@@ -59,42 +59,33 @@
                 <div class="content-container container">
                     <div class="titel-container">
                         <div class="">
-                            <div class="main-title">SAG-SHOW 2020 PRÆSENTERER </div>
-                            <div class="afsnit-titel">MINE DAMER OG HERRER</div>
+                            <div id="årets-titel" class="main-title">SAG-SHOW 2020 PRÆSENTERER </div>
+                            <div class="afsnit-titel">NÆSTEN HELT PERFEKT</div>
                         </div>
                     </div>
                     <div class="container-titel margin">Om showet</div><br>
                     <div class="info-cont">
                         <div class="content">
-                            <p>Det er mørkt og koldt udenfor. Sneen falder roligt ned over et lille gadehjørne, hvor
-                                vi finder en ung, hjemløs pige ved
-                                navn Xenia. Hele sit liv har hun jagtet drømmen om at blive en succesfuld sanger,
-                                men uden held, og nu er hun endt på
-                                gaden uden det mindste tilbage. Tilfældigvis møder hun en cirkusdirektør, som
-                                præsenterer hende for sit cirkus. Her
-                                møder vi både skæggede damer, stærke mænd, siamesiske tvillinger, en sur klovn, en
-                                linedanser, et misfoster, en
-                                mislykket tryllekunstner og hans assistent. Vi lægger hurtigt mærke til den
-                                underlige, mystiske stemning, der er draget
-                                over atmosfæren i cirkuset. Hvad betyder applause-o-meteret, og hvorfor er
-                                artisterne bange for cirkusdirektøren?
-                                Cirkusdirektøren tilbyder Xenia en plads i cirkuset, hvis hun til gengæld gør ham en
-                                tjeneste, der senere viser sig at
-                                bringe hende i noget af et dilemma. Her vil det vise sig, hvad der i sidste ende er
-                                vigtigst. Loyalitet eller
-                                berømmelse?</p>
+                            <p>
+                            Hverdagen er travl, da 6 unge møder hinanden i en reception. De har hver deres årsag til at sidde på de grå kedelige
+                            stole, men hvad de ikke ved, er, at de besidder hver deres egenskab, der samlet vil kunne gøre et menneske perfekt. Men
+                            findes det perfekte menneske overhovedet? Og kan man skabe det selv?
+                            
+                            Stoffer, kærlighed, essens og perfektionisme fylder scenen, når vi åbner årets SAG-show: "Næsten helt perfekt". For
+                            gammel kærlighed ruster aldrig, right?
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="link-container container">
+                <!-- <div class="link-container container">
                     <div class="container-right">
                         <div class="container-titel">Se hele fjolle-showet</div>
                         <div class="rubrik right">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/UaO-kqCbQU0" title="YouTube video player"
                                 frameborder="0" allow="" allowfullscreen></iframe>
                         </div>
-                    </div>
-                    <div class="container-left">
+                    </div> -->
+                    <!-- <div class="container-left">
                         <div class="container-titel">Se teaser</div>
                         <div class="rubrik left">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/WJmB4wUa5z8" title="YouTube video player"
@@ -102,16 +93,16 @@
                                 allowfullscreen></iframe>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="program-container container">
                     <div class="container-titel">Programmet</div>
                 </div> -->
-                <div class="spotify-container container">
+                <!-- <div class="spotify-container container">
                     <div class="container-titel">Musikken</div>
                     <iframe src="https://open.spotify.com/embed/album/1BJHqsUH0FABMdXBQ7gLko?utm_source=generator"
                         width="100%" height="380" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                </div>
+                </div> -->
                 <!-- <div class="credits-container container">
                     <div class="container-titel">Skuespillere</div>
                     <div class="container-titel">Organ og instruktører</div>
@@ -121,6 +112,10 @@
     </main>
     <footer><p>Copyright © 2019 SAGSHOW.</p></footer>
 </body>
+<script src="../js/årstal.js"></script>
 <script src="../js/script.js"></script>
+<script>
+        main_title.innerHTML = 'SAG - SHOW ' + SAG_SHOW_ÅRSTAL + ' PRÆSENTERER';
+</script>
 
 </html>
