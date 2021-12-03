@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="title" onclick="home('..')">SAG-SHOW</div>
+            <div class="title" id="header_title" onclick="home('..')">SAG-SHOW</div>
             <div class="links">
                 <a href="../../index.html">Forside</a>
                 <a href="../åretsshow.html">Årets show</a>
@@ -45,8 +45,8 @@
             </div>
         </aside>
         <div class="outer-content">
-            <div class="background" style="background: url(../../img/2014.png);background-size: 100%;background-position-y: -70vh;"></div>
-            <!-- <div class="background"></div> -->
+            <div class="background"
+                style="background: url(../../img/2014.png);background-size: 100%;background-position-y: -70vh;"></div>
             <div class="inner-content">
                 <div class="curve">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -67,11 +67,16 @@
                     <div class="info-cont">
                         <div class="content">
                             <p>
-                                SAG-SHOW 2014 har i år glæden af at præsentere historien om en vennegruppe, hvis forestilling om en hyggelig
-                                sensommer-eftermiddag slås i stykker, da gruppens leder, Frederik, proklamerer at, livet ingen mening har. Herfra
-                                udspringer kun problemer og mysterier dulmer under overfladen – bundfæstet i en gammel sorg. Alt dette lader det være
-                                dømt for gruppens forhold at gå op i flammer, uden hverken at søge det, eller undfly det. Med et spektakulært sceneshow,
-                                storslåede danse og virtuos musik, er der lagt op til et dragende, og ikke mindst intimt, drama om meningsløshed,
+                                SAG-SHOW 2014 har i år glæden af at præsentere historien om en vennegruppe, hvis
+                                forestilling om en hyggelig
+                                sensommer-eftermiddag slås i stykker, da gruppens leder, Frederik, proklamerer at, livet
+                                ingen mening har. Herfra
+                                udspringer kun problemer og mysterier dulmer under overfladen – bundfæstet i en gammel
+                                sorg. Alt dette lader det være
+                                dømt for gruppens forhold at gå op i flammer, uden hverken at søge det, eller undfly
+                                det. Med et spektakulært sceneshow,
+                                storslåede danse og virtuos musik, er der lagt op til et dragende, og ikke mindst
+                                intimt, drama om meningsløshed,
                                 kærlighed og sorg – i håbet om at finde sandheden og dermed livets mening.
                             </p>
                         </div>
@@ -80,35 +85,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="link-container container">
-                    <div class="container-right">
-                        <div class="container-titel">Se hele fjolle-showet</div>
-                        <div class="rubrik right">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UaO-kqCbQU0"
-                                title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="container-left">
-                        <div class="container-titel">Se teaser</div>
-                        <div class="rubrik left">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WJmB4wUa5z8"
-                                title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="program-container container">
-                    <div class="container-titel">Programmet</div>
-                </div> -->
                 <div class="spotify-container container">
                     <div class="container-titel">Musikken</div>
-                    <iframe src="https://open.spotify.com/embed/album/5YszbsOfffpX4GEVHlCNou?utm_source=generator" width="100%" height="380"
-                        frameBorder="0" allowfullscreen=""
+                    <iframe src="https://open.spotify.com/embed/album/5YszbsOfffpX4GEVHlCNou?utm_source=generator"
+                        width="100%" height="380" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
-                <!-- <div class="credits-container container">
-                    <div class="container-titel">Skuespillere</div>
-                    <div class="container-titel">Organ og instruktører</div>-->
-                </div> -->
             </div>
         </div>
     </main>
@@ -116,6 +98,7 @@
         <p>Copyright © 2019 SAGSHOW.</p>
     </footer>
 </body>
+<script src="../../js/årstal.js"></script>
 <script src="../../js/script.js"></script>
 
 </html>
