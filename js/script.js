@@ -45,3 +45,8 @@ function returnToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;z
 }
+
+var main_title = document.getElementById('årets-titel')
+var header_title = document.getElementById('header_title')
+
+header_title.innerHTML += ` <div class="after">${SAG_SHOW_ÅRSTAL}</div>`;
