@@ -91,14 +91,8 @@ footer {
     text-shadow: 1px 1px 3px gray;
     position: relative;
 }
-.title:hover::after {
-    opacity: 0.5;
-    transition: 0.3s;
-}
 
-.title::after {
-    transition: 0.3s;
-    content: '2022';
+.title .after {
     position: absolute;
     opacity: 1;
     font-size: 2.3rem;
@@ -106,6 +100,7 @@ footer {
     bottom: 5px;
     color: red;
     text-shadow: 1px 1px 3px black;
+    width: 20%;
 }
 
 .links {
@@ -259,6 +254,7 @@ footer p {
         width: 100%;
         padding: 5px;
         transition: 0.2s;
+        letter-spacing: 0.5vw;
     }
 
     .aside-content a:hover {
@@ -295,8 +291,8 @@ footer p {
         width: 40vw;
         font-size: 7vw;
     }
-    .title::after{
-        content: none;
+    .title .after{
+        display: none;
         font-size: 6vw;
         /* bottom: 6vw; */
         right: 1vw;

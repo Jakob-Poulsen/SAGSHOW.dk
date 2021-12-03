@@ -90,14 +90,16 @@ img {
 
 
 .background-image {
-    transform: scale(105%);
     position: absolute;
-    width: 100vw;
+    filter: blur(8px);
     height: 110vh;
     z-index: 0;
-    background: url(../img/2020.png);
+    background-repeat: repeat;
+    background: url(../img/2022\(2\).jpg);
+    background-size:90%;
+    /* transform: scale(80%); */
     background-position: center;
-    filter: blur(8px);
+    width: 100vw;
 }
 
 

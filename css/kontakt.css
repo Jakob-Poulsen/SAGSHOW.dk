@@ -28,7 +28,7 @@ main {
 }
 
 .curve svg {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .outer-content {

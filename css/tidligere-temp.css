@@ -145,7 +145,8 @@ p {
 @media only screen and (max-width: 1060px) {
     
     p {
-        line-height: 35px;
+        font-size: 0.8rem;
+        line-height: 25px;
         column-count: 1;
     }
     .link-container {
@@ -164,6 +165,7 @@ p {
         flex-direction: column;
         flex-wrap: wrap;
         height: fit-content;
+        align-items: center;
     }
 
     .img-container {
