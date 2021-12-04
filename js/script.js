@@ -50,3 +50,6 @@ var main_title = document.getElementById('årets-titel')
 var header_title = document.getElementById('header_title')
 
 header_title.innerHTML += ` <div class="after">${SAG_SHOW_ÅRSTAL}</div>`;
+
+document.querySelector('.links').childNodes[11].innerHTML = 'Billetter på vej!';
+document.querySelector('.aside-content').childNodes[11].innerHTML = 'Billetter på vej!';
