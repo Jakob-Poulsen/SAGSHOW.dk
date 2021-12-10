@@ -43,7 +43,7 @@ topButton()
 
 function returnToTop() {
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;z
+    document.documentElement.scrollTop = 0;
 }
 
 var main_title = document.getElementById('årets-titel')
@@ -51,5 +51,8 @@ var header_title = document.getElementById('header_title')
 
 header_title.innerHTML += ` <div class="after">${SAG_SHOW_ÅRSTAL}</div>`;
 
-document.querySelector('.links').childNodes[11].innerHTML = 'Billetter på vej!';
-document.querySelector('.aside-content').childNodes[11].innerHTML = 'Billetter på vej!';
+document.querySelector('.links').childNodes[11].innerHTML = 'Køb billet!';
+document.querySelector('.aside-content').childNodes[11].innerHTML = 'Køb billet!';
+
+document.querySelector('.special-button').href = 'http://sag.safeticket.dk/sagshow2022';
+document.querySelector('.aside-content').childNodes[11].href = 'http://sag.safeticket.dk/sagshow2022';
