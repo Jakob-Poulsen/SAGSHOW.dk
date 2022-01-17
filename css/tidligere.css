@@ -45,6 +45,7 @@ body {
 
 .gamle-plakater {
     width: 90vw;
+    max-width: 1200px;
     display: flex;
     justify-content:flex-start;
     overflow-x: scroll;
@@ -110,8 +111,8 @@ body {
     height: clamp(1vh, fit-content, 100%);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 2vw;
 }
 
 p {
@@ -127,11 +128,25 @@ p {
     text-decoration: line-through;
 }
 
+
+.simple-shadow {
+    border: 1px solid black;
+    background:rgba(128, 128, 128, 0.5);
+}
+
 .cont1900, .cont2000 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 2vw;
+}
+
+li {
+    font-size: 1.2rem;
+    margin: 0.6ch 2ch;
+}
+
 @media only screen and (max-width: 1060px) {
     .list{
         flex-direction: column;
@@ -142,5 +157,10 @@ p {
     .gamle-plakater {
         justify-content: flex-start;
     }
+    .cont1900, .cont2000 {
+        width: 95%;
+    }
+    li {
+        font-size: 0.8rem;
+    }
 }
-

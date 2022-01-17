@@ -10,11 +10,17 @@ body {
 
 .mail {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 22.4px;
 }
 
+.kontakt-info, .hjemmeside-info, .info-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .info-info {
+    font-size: 100px;
     text-align: center;
 }
 
@@ -58,14 +64,17 @@ main {
     font-size: 2.5rem;
 }
 
+.info {
+    background: rgba(128, 128, 128, 0.5);
+    padding: 5vh 10vw;
+    margin: 2vh 15vw;
+    border: 1px solid gray;
+}
 
 .container {
     background: var(--back);
-    /* margin: 40px 30px; */
-    /* border: 1px solid black; */
     text-align: justify;
     padding: 30px 10vw;
-    padding-top: 10vh;
 }
 .container-titel {
     font-size: 2rem;
@@ -91,15 +100,17 @@ main {
     width: 50%;
 }
 
+.kontakt-info a,  p, .hjemmeside-info a {
+    font-size:1.6rem;
+}
 
 p {
     text-shadow: none;
-    font-size: 1.4rem;
     font-weight: 100;
     line-height: 35px;
-    /* column-count: 2; */
     column-gap: 5vw;
     letter-spacing: 0.1vw;
+    text-align: start;
 }
 
 .img-container {
@@ -159,8 +170,13 @@ p {
 @media only screen and (max-width: 1060px) {
     
     p {
-        line-height: 35px;
+        line-height: 15px;
         column-count: 1;
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+    .kontakt-info a, .hjemmeside-info a {
+        font-size: 1rem;
     }
     .link-container {
         flex-direction: column;
@@ -187,6 +203,10 @@ p {
 
     .content {
         width: 80%;
+    }
+
+    .info {
+        margin: 0;
     }
 }
 
