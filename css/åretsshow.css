@@ -1,16 +1,17 @@
 :root {
-    --back:rgba(255, 255, 255, 0.9);
+    --back: rgba(255, 255, 255, 0.9);
 }
 
 body {
     /* background:url(../img/2020.png); */
-    background:black;
+    background: black;
     overflow: hidden;
 }
 
 iframe {
     border: 2px solid black;
-    width: 45vw;
+    width: clamp(300px, 80vw, 960px);
+    height: clamp(200px, 60vw, 600px);
 }
 
 .outer-content {
@@ -34,18 +35,14 @@ iframe {
 }
 
 .inner-content {
-    /* min-height: 200vh; */
-    margin: 30vh 0vw 0 0 ;
+    margin: 30vh 0vw 0 0;
     position: relative;
 }
 
-
 .container {
     background: var(--back);
-    /* margin: 40px 30px; */
-    /* border: 1px solid black; */
     text-align: justify;
-    padding: 30px 10vw;
+    padding: 20px 10vw;
     padding-top: 10vh;
 }
 
@@ -61,7 +58,6 @@ iframe {
 }
 
 .margin {
-    
     margin-top: 10vh;
 }
 
@@ -82,46 +78,41 @@ iframe {
     position: relative;
     width: auto;
 
-    letter-spacing:1.2px;
-
+    letter-spacing: 1.2px;
 }
 
-
 p {
-
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.4rem;
     font-weight: 100;
     text-shadow: none;
     line-height: 35px;
-    
-    
 }
 
 .p-brødtekst {
     height: fit-content;
     max-width: 40vw;
-    
+
     padding: 2vh 3vw;
 
-    background:rgba(128, 128, 128, 0.5);
+    background: rgba(128, 128, 128, 0.5);
     border: 1px solid rgba(128, 128, 128, 0.75);
-
 }
 
 .content-container img {
     height: 30vw;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 .link-container {
     display: flex;
     justify-content: space-around;
+    height: fit-content;
 }
-.container-right,.container-left {
+.container-right,
+.container-left {
     /* border: 1px solid black; */
     width: 50%;
-    height: 300px;
 }
 
 .large-title-container {
@@ -134,7 +125,7 @@ p {
     display: flex;
     width: fit-content;
     justify-content: center;
-    background:none;
+    background: none;
     position: relative;
     width: 100%;
 }
@@ -145,15 +136,15 @@ p {
     text-align: center;
 }
 
-.curve{
+.curve {
     transform: translateY(0.4px) rotate(180deg);
-    fill:var(--back);
-
+    fill: var(--back);
 }
 
-.container-right, .container-left {
+.container-right,
+.container-left {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     align-items: center;
     width: fit-content;
 }
@@ -171,7 +162,7 @@ p {
     }
 
     .info-cont {
-        margin: none; 
+        margin: none;
         flex-direction: column;
         align-items: center;
         gap: 5vh;
@@ -192,7 +183,7 @@ p {
         width: 90vw;
     }
     .container-right {
-        margin-bottom: 20vh;
+        /* margin-bottom: 20vh; */
     }
 }
 

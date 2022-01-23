@@ -65,7 +65,7 @@ iframe {
     line-height: 1.6em;
     font-size: 1.2rem;
     padding: clamp(10px, 2rem, 30px);
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 .container-titel {
@@ -101,9 +101,13 @@ iframe {
 }
 
 .curve{
-    transform: translateY(4px);
     fill:var(--back);
+    position: relative;
+}
 
+.curve svg {
+    position: absolute;
+    bottom: 0;
 }
 
 .media-img {

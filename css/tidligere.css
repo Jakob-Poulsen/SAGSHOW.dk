@@ -101,9 +101,13 @@ body {
 }
 
 .curve{
-    transform: translateY(4px);
     fill:var(--back);
+    position: relative;
+}
 
+.curve svg {
+    position: absolute;
+    bottom: 0;
 }
 
 .list {

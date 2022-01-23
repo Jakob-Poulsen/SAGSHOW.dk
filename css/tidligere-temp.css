@@ -1,11 +1,10 @@
 :root {
-    --back:rgba(255, 255, 255, 0.9);
+    --back: rgba(255, 255, 255, 0.9);
 }
 
 body {
     /* background:url(../img/2020.png); */
-    background:black;
-    
+    background: black;
 }
 main {
     margin-top: 100px;
@@ -37,22 +36,22 @@ iframe {
 
 .inner-content {
     /* min-height: 200vh; */
-    margin: 30vh 0vw 0 0 ;
+    margin: 30vh 0vw 0 0;
     position: relative;
     width: 100%;
 }
 
-.main-title, .afsnit-titel {
+.main-title,
+.afsnit-titel {
     font-size: 2.5rem;
 }
-
 
 .container {
     background: var(--back);
     /* margin: 40px 30px; */
     /* border: 1px solid black; */
     text-align: justify;
-    padding: 30px 10vw;
+    padding: 30px 5vw;
     padding-top: 10vh;
 }
 .container-titel {
@@ -75,27 +74,26 @@ iframe {
     align-items: flex-start;
     justify-content: center;
     gap: 5vw;
-    height:fit-content;
+    height: fit-content;
 }
 
 .content {
-    letter-spacing:1.2px;
+    letter-spacing: 1.2px;
     width: 50%;
 }
-
 
 p {
     text-shadow: none;
     font-size: 1.4rem;
     font-weight: 100;
     line-height: 35px;
-    letter-spacing: 0.1vw;
+    text-align: justify;
 }
 
 .content p {
     padding: 2vh 3vw;
-    
-    background:rgba(128, 128, 128, 0.5);
+
+    background: rgba(128, 128, 128, 0.5);
     border: 1px solid rgba(128, 128, 128, 0.75);
     box-shadow: 2px 2px 5px black;
 }
@@ -122,11 +120,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
-.container-right,.container-left {
+.container-right,
+.container-left {
     /* border: 1px solid black; */
     width: 50%;
     height: 300px;
@@ -142,7 +139,7 @@ p {
     display: flex;
     width: fit-content;
     justify-content: center;
-    background:none;
+    background: none;
     position: relative;
     width: 100%;
 }
@@ -153,20 +150,19 @@ p {
     text-align: center;
 }
 
-.curve{
+.curve {
     transform: translateY(0.4px) rotate(180deg);
-    fill:var(--back);
-
+    fill: var(--back);
 }
 
-.container-right, .container-left {
+.container-right,
+.container-left {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     align-items: center;
 }
 
 @media only screen and (max-width: 1060px) {
-    
     p {
         font-size: 0.8rem;
         line-height: 25px;
@@ -182,8 +178,9 @@ p {
     }
     .container-right {
         margin-bottom: 20vh;
+        width: fit-content;
     }
-    
+
     .info-cont {
         flex-direction: column;
         flex-wrap: wrap;
@@ -197,7 +194,7 @@ p {
     }
 
     .content {
-        width: 80%;
+        width: 90%;
     }
 }
 

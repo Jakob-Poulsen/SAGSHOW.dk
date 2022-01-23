@@ -2,79 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
+/* 
+!TABLE OF CONTENTS!
+!===========================
+    *1. Global_elements
+        ?1.1. 
+    *2. Header
+        ?2.1. header_links
+    *3. Aside_menu
+        ?3.1.
+    *4. Footer
+        ?4.1.
+    *5. Global_standards
+    *6. Media_query
+        ?6.1. Aside_query
+!===========================
+*/
+
 :root {
-    --dark:linear-gradient(90deg, #7F0012, #F46262);
-    --big-button: linear-gradient(0deg, #fff1b7,#fcdf51);
+    --dark: linear-gradient(90deg, #7f0012, #f46262);
+    --big-button: linear-gradient(0deg, #fff1b7, #fcdf51);
     --headercolor: white;
     --hover: gray;
-    --visited:hsl(0, 0%, 80%);
-    --asidewidth: clamp(300px, 15vw,520px);
+    --visited: hsl(0, 0%, 80%);
+    --asidewidth: clamp(200px, 15vw, 450px);
     --middle-blue: rgb(100, 193, 203);
     --bronze: rgb(193, 131, 70);
 }
+
+/* ===================
+    *Global_elements
+====================*/
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 1rem;
-    font-family:sans-serif;
+    /* font-family: sans-serif; */
 }
 
-p, li {
+p,
+li {
     font-family: 'Times New Roman', Times, serif;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
+
 body {
+    overflow-y: hidden;
     position: relative;
-}
-header {
-    position:fixed;
-    top: 0;
-    height: 102px;
-    width: 100vw;
-    background: var(--headercolor);
-    opacity:0.95;
-    display: flex;
-    border-bottom: 2px solid black;
-    z-index: 99;
-}
-
-header a {
-    color: black;
-    font-family: 'Fjalla one',sans-serif;
-    text-decoration: none;
-    width: 115px;
-    height: 50%;
-    margin: 10% 1vw;
-    padding: 1% 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 3px;
-    box-shadow: 0px 2px 2px black;
-    transition: 0.3s;
-    letter-spacing: 1.2px;
-}
-
-header a:hover{
-    background: var(--middle-blue);
-    box-shadow: 0px 1px 2px black;
-    text-shadow: 1px 1px var(--bronze);
-    /* transition: 0.3s; */
-}
-
-header a:active{
-    transform: scale(95%);
-}
-
-aside {
-    z-index: 99;
-    display: none;
 }
 
 main {
@@ -82,16 +62,34 @@ main {
     min-height: 100vh;
 }
 
-footer {
-    position: relative;
-    width: 100vw;
-    height: 70px;
-    background: gray;
-    color:white;
-    border-top: 1px solid black;
-    text-align: center;
-    padding: 20px;
+::-webkit-scrollbar {
+    display: none;
 }
+/* ===================
+    *Header
+====================*/
+
+header {
+    position: fixed;
+    top: 0;
+    height: 102px;
+    width: 100vw;
+    background: var(--headercolor);
+    opacity: 0.95;
+    display: flex;
+    border-bottom: 2px solid black;
+    z-index: 1001;
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* ?header_title */
 
 .title {
     color: black;
@@ -116,22 +114,41 @@ footer {
     font-family: 'Fjalla one';
 }
 
+/* ?header_links */
+
 .links {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header-content {
-    position: relative;
+header a {
+    color: black;
+    font-family: 'Fjalla one', sans-serif;
+    text-decoration: none;
+    width: 115px;
+    height: 50%;
+    margin: 10% 1vw;
+    padding: 1% 1%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px black;
+    transition: 0.3s;
+    letter-spacing: 1.2px;
 }
 
-.menu-button {
-    display: none;
+header a:hover {
+    background: var(--middle-blue);
+    box-shadow: 0px 1px 2px black;
+    text-shadow: 1px 1px var(--bronze);
+    /* transition: 0.3s; */
+}
+
+header a:active {
+    transform: scale(95%);
 }
 
 .special-button {
@@ -141,13 +158,20 @@ footer {
     font-weight: 700;
     border-radius: 4px;
     /* background: linear-gradient(0deg, rgba(247, 187, 5, 1), rgba(255, 221, 140, 1)); */
-    background: linear-gradient(180deg, rgba(247, 187, 5, 1), rgba(255, 221, 140, 1));
+    background: linear-gradient(
+        180deg,
+        rgba(247, 187, 5, 1),
+        rgba(255, 221, 140, 1)
+    );
     box-shadow: inset 0.5px 0.5px 3px #00000069, 0px 3px 2px black;
     transition: 0.2s;
 }
 
 .special-button:hover {
-    background: linear-gradient( rgba(247, 187, 5, 0.637), rgba(255, 220, 140, 0.671));
+    background: linear-gradient(
+        rgba(247, 187, 5, 0.637),
+        rgba(255, 220, 140, 0.671)
+    );
     box-shadow: inset 0.5px 0.5px 3px #00000069, 0px 1px 2px black;
     text-shadow: 0 2px var(--bronze);
     transition: 0.2s;
@@ -156,6 +180,34 @@ footer {
 .aktuel-link {
     background: var(--visited);
     box-shadow: 0px 3.5px 1px var(--bronze), 0px 4px 0px black;
+}
+
+/* ===================
+    *Aside_menu
+====================*/
+
+aside {
+    z-index: 99;
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* ===================
+    *Footer
+====================*/
+
+footer {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    background: gray;
+    color: white;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 20px;
 }
 
 footer p {
@@ -185,21 +237,28 @@ footer p {
     transition: 0.3s;
 }
 
-.afsnit-titel, .main-title {
+.afsnit-titel,
+.main-title {
     text-shadow: 0.4px 0.4px 2px black;
     font-size: 2.5rem;
     text-decoration-line: underline;
 }
 
-/*
-    ?standarder
-*/
+/* ===================
+    *Global_standards
+====================*/
 
 .simple-shadow {
     box-shadow: 2px 2px 5px black;
 }
 
+/* ===================
+    *Media_query
+====================*/
+
 @media only screen and (max-width: 1073px) {
+    /* ?Aside_query  */
+
     .links {
         display: none;
     }
@@ -216,7 +275,7 @@ footer p {
         justify-content: center;
         align-items: center;
         position: absolute;
-        height:60px;
+        height: 60px;
         width: 60px;
         right: 50px;
         top: 20px;
@@ -231,24 +290,24 @@ footer p {
         border: none;
         padding: 10px;
         transition: 0.3s ease;
-        cursor: pointer;        
+        cursor: pointer;
     }
 
     button img {
         border: none;
     }
 
-    .sidemenu-button:hover, .sidemenu-button:focus-visible {
+    .sidemenu-button:hover,
+    .sidemenu-button:focus-visible {
         background: gray;
         transition: 0.2s ease;
         /* transform: rotate(360deg); */
     }
 
-    .sidemenu-button:active  {
+    .sidemenu-button:active {
         transform: scale(95%);
         transition: 0;
     }
-
 
     .sidemenu-button img {
         height: 100%;
@@ -258,7 +317,7 @@ footer p {
         height: 100%;
         width: 100%;
         opacity: 0.9;
-        background: linear-gradient(0deg,var(--bronze), var(--middle-blue));
+        background: linear-gradient(0deg, var(--bronze), var(--middle-blue));
     }
 
     .aside-content {
@@ -285,7 +344,7 @@ footer p {
         box-shadow: 0px 2px black, 0px -2px black;
         text-shadow: 0px 2.3px black;
         border-left: none;
-        border-right:none;
+        border-right: none;
         transition: 0.2s ease;
     }
 
@@ -296,26 +355,25 @@ footer p {
         position: fixed;
         display: flex;
         bottom: 0;
-        right:calc(var(--asidewidth)*-1);
+        right: calc(var(--asidewidth) * -1);
         transition: 0.65s ease-in-out;
+        z-index: 1001;
     }
     .aside-show {
-        transform: translateX(calc(var(--asidewidth)*-1));
+        transform: translateX(calc(var(--asidewidth) * -1));
     }
 }
 
-
 @media only screen and (max-width: 560px) {
     .menu-button {
-        position:relative;
+        position: relative;
         left: 10vw;
-        
     }
     .title {
         width: 40vw;
         font-size: 7vw;
     }
-    .title .after{
+    .title .after {
         display: none;
         font-size: 6vw;
         /* bottom: 6vw; */
