@@ -1,1 +1,1 @@
-var SAG_SHOW_ÅRSTAL = 2022;
+var SAG_SHOW_ÅRSTAL = 2023;

@@ -3,7 +3,7 @@ var header_title = document.getElementById('header_title')
 
 
 //*set date
-var timeConstruct = function(param) {
+var timeConstruct = function (param) {
     let date = new Date;
     if (param == 'time') {
         return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
@@ -12,7 +12,7 @@ var timeConstruct = function(param) {
         return `${date.getUTCDate()}/${date.getUTCMonth() + 1} - ${date.getFullYear()}`;
     }
 }
-console.log(' connected...\n', timeConstruct('time') + ' | ' +  timeConstruct('date'))
+console.log(' connected...\n', timeConstruct('time') + ' | ' + timeConstruct('date'))
 
 //*Side-menu 
 var asideBoolean = 0;
@@ -75,5 +75,5 @@ header_title.innerHTML += ` <div class="after">${SAG_SHOW_ÅRSTAL}</div>`;
 document.querySelector('.links').childNodes[11].innerHTML = 'Køb billet!';
 document.querySelector('.aside-content').childNodes[11].innerHTML = 'Køb billet!';
 
-document.querySelector('.special-button').href = 'http://sag.safeticket.dk/sagshow2022';
-document.querySelector('.aside-content').childNodes[11].href = 'http://sag.safeticket.dk/sagshow2022';
+document.querySelector('.special-button').href = 'https://sag.safeticket.dk/sagshow2023?fbclid=IwAR2hW-MUkPJBY6c3aTwWKEqwCWiOKM30TCiqRdM1st1Nbb9ZIGENh3U6K6A';
+document.querySelector('.aside-content').childNodes[11].href = 'https://sag.safeticket.dk/sagshow2023?fbclid=IwAR2hW-MUkPJBY6c3aTwWKEqwCWiOKM30TCiqRdM1st1Nbb9ZIGENh3U6K6A';
