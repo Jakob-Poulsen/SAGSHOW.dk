@@ -21,7 +21,7 @@ iframe {
 }
 
 .background {
-    background: url(../img/2022\(1\).jpg);
+    background: url(../img/2023.jpg);
     background-size: 100%;
     background-repeat: repeat;
     background-position-y: -1100px;
@@ -109,6 +109,7 @@ p {
     justify-content: space-around;
     height: fit-content;
 }
+
 .container-right,
 .container-left {
     /* border: 1px solid black; */
@@ -148,6 +149,7 @@ p {
     align-items: center;
     width: fit-content;
 }
+
 @media only screen and (max-width: 1060px) {
     p {
         line-height: 35px;
@@ -182,6 +184,7 @@ p {
     iframe {
         width: 90vw;
     }
+
     .container-right {
         /* margin-bottom: 20vh; */
     }

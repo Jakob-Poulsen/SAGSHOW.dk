@@ -1,9 +1,9 @@
 :root {
-    --back:rgba(255, 255, 255, 0.9);
+    --back: rgba(255, 255, 255, 0.9);
 }
 
 body {
-    background:black;
+    background: black;
 }
 
 .outer-content {
@@ -33,7 +33,8 @@ body {
     position: relative;
 }
 
-.main-title, .afsnit-titel {
+.main-title,
+.afsnit-titel {
     font-size: 3rem;
 }
 
@@ -47,7 +48,7 @@ body {
     width: 90vw;
     max-width: 1200px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     overflow-x: scroll;
     background: rgb(170, 170, 170);
     border: 2px solid black;
@@ -68,7 +69,7 @@ body {
     transition: 0.3s;
 }
 
-.plakat-img img:hover{
+.plakat-img img:hover {
     transform: scale(101%);
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
     transition: 0.2s;
@@ -88,10 +89,10 @@ body {
     display: flex;
     width: fit-content;
     justify-content: center;
-    background:none;
+    background: none;
     position: relative;
     width: 100vw;
-    padding:  5vh 0 0 0 ;
+    padding: 5vh 0 0 0;
 }
 
 .titel-container div {
@@ -100,8 +101,8 @@ body {
     text-align: center;
 }
 
-.curve{
-    fill:var(--back);
+.curve {
+    fill: var(--back);
     position: relative;
 }
 
@@ -135,10 +136,11 @@ p {
 
 .simple-shadow {
     border: 1px solid black;
-    background:rgba(128, 128, 128, 0.5);
+    background: rgba(128, 128, 128, 0.5);
 }
 
-.cont1900, .cont2000 {
+.cont1900,
+.cont2000 {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -152,18 +154,22 @@ li {
 }
 
 @media only screen and (max-width: 1060px) {
-    .list{
+    .list {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
     }
+
     .gamle-plakater {
         justify-content: flex-start;
     }
-    .cont1900, .cont2000 {
+
+    .cont1900,
+    .cont2000 {
         width: 95%;
     }
+
     li {
         font-size: 0.8rem;
     }

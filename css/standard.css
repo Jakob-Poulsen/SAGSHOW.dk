@@ -26,8 +26,8 @@
     --hover: gray;
     --visited: hsl(0, 0%, 80%);
     --asidewidth: clamp(200px, 15vw, 450px);
-    --middle-blue: rgb(100, 193, 203);
-    --bronze: rgb(193, 131, 70);
+    --middle-blue: #708dab;
+    --bronze: #d8cdb3;
 }
 
 /* ===================
@@ -65,6 +65,7 @@ main {
 ::-webkit-scrollbar {
     display: none;
 }
+
 /* ===================
     *Header
 ====================*/
@@ -158,20 +159,16 @@ header a:active {
     font-weight: 700;
     border-radius: 4px;
     /* background: linear-gradient(0deg, rgba(247, 187, 5, 1), rgba(255, 221, 140, 1)); */
-    background: linear-gradient(
-        180deg,
-        rgba(247, 187, 5, 1),
-        rgba(255, 221, 140, 1)
-    );
+    background: linear-gradient(180deg,
+            rgba(247, 187, 5, 1),
+            rgba(255, 221, 140, 1));
     box-shadow: inset 0.5px 0.5px 3px #00000069, 0px 3px 2px black;
     transition: 0.2s;
 }
 
 .special-button:hover {
-    background: linear-gradient(
-        rgba(247, 187, 5, 0.637),
-        rgba(255, 220, 140, 0.671)
-    );
+    background: linear-gradient(rgba(247, 187, 5, 0.637),
+            rgba(255, 220, 140, 0.671));
     box-shadow: inset 0.5px 0.5px 3px #00000069, 0px 1px 2px black;
     text-shadow: 0 2px var(--bronze);
     transition: 0.2s;
@@ -281,6 +278,7 @@ footer p {
         top: 20px;
         border: none;
     }
+
     .sidemenu-button {
         height: 100%;
         width: 100%;
@@ -359,6 +357,7 @@ footer p {
         transition: 0.65s ease-in-out;
         z-index: 1001;
     }
+
     .aside-show {
         transform: translateX(calc(var(--asidewidth) * -1));
     }
@@ -369,10 +368,12 @@ footer p {
         position: relative;
         left: 10vw;
     }
+
     .title {
         width: 40vw;
         font-size: 7vw;
     }
+
     .title .after {
         display: none;
         font-size: 6vw;

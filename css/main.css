@@ -71,6 +71,7 @@ footer {
     gap: 20%;
     padding: 2rem 10% 0 10%;
 }
+
 .corona-sub-btn {
     box-sizing: content-box;
     padding: 0.7rem 1.6rem;
@@ -93,14 +94,17 @@ footer {
         right: calc(100vw - 50px);
         background: var(--corona-clr-dark);
     }
+
     33% {
         right: calc(100vw - 220px);
         background: var(--corona-clr-light);
     }
+
     66% {
         right: calc(100vw - 220px);
         background: var(--corona-clr-light);
     }
+
     100% {
         right: calc(100vw - 50px);
         background: var(--corona-clr-dark);
@@ -147,6 +151,7 @@ footer {
     transform: scale(145%);
     fill: var(--corona-clr-light);
 }
+
 .corona-svg-info {
     margin: 0 15px;
     padding: 0.5ch;
@@ -178,11 +183,10 @@ footer {
 }
 
 .special-background {
-    background-image: conic-gradient(
-        var(--middle-blue),
-        var(--bronze),
-        var(--middle-blue)
-    );
+    background-image:
+        conic-gradient(var(--middle-blue),
+            var(--bronze),
+            var(--middle-blue));
 }
 
 .plakat-container {
@@ -200,7 +204,8 @@ footer {
 
 .plakat-container img {
     height: auto;
-    width: clamp(250px, 20vw, 500px); /**/
+    width: clamp(250px, 20vw, 500px);
+    /**/
     border: 1px solid black;
 }
 
@@ -233,6 +238,7 @@ footer {
         inset 0px -25px rgba(255, 255, 255, 0.35);
     transition: 0.3s;
 }
+
 .button-container button:hover {
     box-shadow: 0px 4px rgba(89, 216, 67, 0.5),
         inset 0px -23px rgba(255, 255, 255, 0.25);
@@ -270,7 +276,7 @@ footer {
     height: 122vh;
     z-index: -10;
     background-repeat: repeat;
-    background: url(../img/2022\(2\).jpg);
+    background: url(../img/2023.jpg);
     background-size: 90%;
     /* transform: scale(80%); */
     background-position: center;
@@ -360,6 +366,7 @@ footer {
     from {
         background-position-y: 0px;
     }
+
     to {
         background-position-y: -595px;
     }
@@ -370,6 +377,7 @@ footer {
     justify-content: center;
     position: relative;
 }
+
 .extra-btn {
     height: 8vh;
 
@@ -414,8 +422,10 @@ footer {
     font-size: 2.3rem;
 
     color: rgba(255, 255, 255, 0.8);
-    -webkit-text-stroke: 1px black; /* width and color */
+    -webkit-text-stroke: 1px black;
+    /* width and color */
 }
+
 .hvoromknap,
 .extra-btn {
     border-radius: 20px;
@@ -437,6 +447,7 @@ footer {
 }
 
 @media only screen and (max-width: 990px) {
+
     .bottom-plakat,
     .upper-plakat {
         flex-direction: column;
@@ -456,6 +467,7 @@ footer {
     .upper-plakat {
         margin-top: 0;
     }
+
     .tidligere-plakat {
         display: flex;
         justify-content: center;
