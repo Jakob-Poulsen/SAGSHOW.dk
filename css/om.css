@@ -8,7 +8,8 @@ body {
 }
 
 iframe {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 10px;
     width: 45vw;
     margin-bottom: 20px;
 }
@@ -44,7 +45,7 @@ iframe {
 }
 
 .container {
-    background: var(--back);
+    /* background: var(--back); */
     height: fit-content;
     padding: 0 5vw;
 
@@ -59,8 +60,8 @@ iframe {
 }
 
 .info p {
-    background:rgba(128, 128, 128, 0.5);
-    border: 1px solid rgba(128, 128, 128, 0.75);
+    /* background:rgba(128, 128, 128, 0.5);
+    border: 1px solid rgba(128, 128, 128, 0.75); */
     border-radius: 20px;
     line-height: 1.6em;
     font-size: 1.2rem;
