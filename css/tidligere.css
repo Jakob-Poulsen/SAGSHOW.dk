@@ -48,7 +48,7 @@ body {
     width: 90vw;
     max-width: 1200px;
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: flex-start;
     overflow-x: scroll;
     background: var(--slate-400);

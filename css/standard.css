@@ -112,6 +112,10 @@ main {
 	min-height: 100vh;
 }
 
+img {
+	border-radius: 10px;
+}
+
 ::-webkit-scrollbar {
 	/* display: none; */
 }
