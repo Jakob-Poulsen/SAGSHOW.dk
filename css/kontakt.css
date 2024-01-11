@@ -61,14 +61,15 @@ main {
 }
 
 .info {
-    background: rgba(128, 128, 128, 0.5);
+    background:var(--slate-100);
     padding: 5vh 10vw;
     margin: 2vh 15vw;
-    border: 1px solid gray;
+    border: 1px solid var(--slate-400);
+    border-radius: 10px;
 }
 
 .container {
-    background: var(--back);
+    background: var(--slate-200);
     text-align: justify;
     padding: 30px 10vw;
 }

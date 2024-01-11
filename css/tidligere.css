@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-    background: var(--slate-100);
+    background: var(--slate-200);
     padding: 0;
     min-height: 150px;
 }
@@ -48,11 +48,12 @@ body {
     width: 90vw;
     max-width: 1200px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-start;
     overflow-x: scroll;
-    background: rgb(170, 170, 170);
-    border: 2px solid black;
-    box-shadow: inset 1px 1px 3px black;
+    background: var(--slate-400);
+    border: 2px solid var(--slate-600);
+    box-shadow: inset 1px 1px 5px var(--slate-500);
 }
 
 .plakat-img {
@@ -63,15 +64,15 @@ body {
 .plakat-img img {
     height: inherit;
     width: inherit;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px black;
+    border: 1px solid var(--slate-800);
+    box-shadow: 3px 3px 5px var(--slate-500);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .plakat-img img:hover {
     transform: scale(101%);
-    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px var(--slate-600);
     transition: 0.2s;
 }
 
@@ -134,10 +135,10 @@ p {
 }
 
 
-.simple-shadow {
+/* .simple-shadow {
     border: 1px solid black;
     background: rgba(128, 128, 128, 0.5);
-}
+} */
 
 .cont1900,
 .cont2000 {

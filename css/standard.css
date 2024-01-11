@@ -311,7 +311,7 @@ footer p {
 ====================*/
 
 .simple-shadow {
-	box-shadow: 2px 2px 5px black;
+	/* box-shadow: 1px 1px 5px var(--slate-500); */
 }
 
 /* ===================
@@ -463,17 +463,19 @@ p {
     font-weight: 100;
     text-shadow: none;
     line-height: 35px;
+    text-align: left;
 }
 
 .p-brødtekst {
     height: fit-content;
     max-width: 40vw;
 
-    padding: 2vh 3vw;
+    padding: 1rem 2rem;
 
     /* background: rgba(128, 128, 128, 0.5); */
     background-color: var(--slate-100);
     border: 1px solid var(--slate-800);
+	border-radius: 10px;
 }
 
 .container {
